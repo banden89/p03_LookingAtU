@@ -118,7 +118,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"main.js":[function(require,module,exports) {
-'use strict'; // On this codelab, you will be streaming only video (video: true).
+'use strict'; //嚴格模式
+// On this codelab, you will be streaming only video (video: true).
 
 var mediaStreamConstraints = {
   video: true
@@ -187,7 +188,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "13503" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "1880" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

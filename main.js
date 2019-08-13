@@ -1,4 +1,4 @@
-'use strict';
+'use strict';//嚴格模式
 
 // On this codelab, you will be streaming only video (video: true).
 const mediaStreamConstraints = 
@@ -27,17 +27,6 @@ function handleLocalMediaStreamError(error)
 
 // Initializes media stream.
 navigator.mediaDevices.getUserMedia(mediaStreamConstraints).then(gotLocalMediaStream).catch(handleLocalMediaStreamError);
-
-
-
-
-
-
-
-
-
-
-
 
 
 
